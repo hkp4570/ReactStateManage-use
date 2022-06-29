@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Index from '@pages/home';
+import TodoList from '@pages/todoList'
 import reportWebVitals from './reportWebVitals';
+import {RecoilRoot} from "recoil";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Index/>
+      <RecoilRoot>
+          <TodoList />
+      </RecoilRoot>
   </React.StrictMode>
 );
 
