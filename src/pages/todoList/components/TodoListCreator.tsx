@@ -8,7 +8,7 @@ function getId() {
     return id++;
 }
 
-const TodoItemCreator = () => {
+const TodoListCreator = () => {
     const [inputValue, setInputValue] = useState('');
     const setTodoList = useSetRecoilState(todoListState);
     const getInputValue = (event: BaseSyntheticEvent) => {
@@ -30,4 +30,4 @@ const TodoItemCreator = () => {
     );
 };
 
-export default TodoItemCreator;
+export default TodoListCreator;
